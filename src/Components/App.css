@@ -1,0 +1,136 @@
+body {
+	background-color: hsla(225, 100%, 94%, 0.801);
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.search {
+	display: flex;
+	justify-content: center;
+	padding-left: 10px;
+	border-radius: 10px;
+	height: 30px;
+}
+
+.container {
+	padding: 40px 20px 20px 20px;
+	width: 99%;
+	margin: auto;
+	flex-wrap: wrap;
+	display: flex;
+	justify-content: space-between;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.card_item {
+	padding: 15px 30px;
+	width: 24%;
+	text-align: center;
+}
+
+.container .card_item:hover {
+	transform: scale(1.02);
+	transition: transform .3s;
+	cursor: pointer;
+}
+
+.card_inner {
+	background: rgba(253, 253, 253, 0.808);
+	border-radius: 30px;
+	padding: 10px 10px;
+	width: 300px;
+	box-shadow: 5px 5px 10px 2px rgba(95, 95, 95, 0.24);
+	border: 2px solid black;
+}
+
+.container .card_item img {
+	width: 249px;
+	height: 192px;
+	margin-bottom: 10px;
+	border-radius: 10%;
+	align-items: center;
+	transition: transform .2s;
+}
+
+.container .card_item .userName {
+	margin-top: 10px;
+	color: #203150;
+	font-weight: 600;
+	font-size: 20px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.detail-box span {
+	margin: 2px;
+	padding: 2px 10px;
+	/* border: 2px solid #c7e6fa; */
+	background-color: #f0ebfa;
+	border-radius: 50px;
+	font-size: 10px;
+	font-weight: 600;
+	color: #788697;
+}
+
+.seeMore {
+	margin: 10px auto;
+	width: 32px;
+	height: 30px;
+	background: black;
+	color: #fff;
+	border: none;
+	border-radius: 20px;
+	font-weight: 600;
+	cursor: pointer;
+	/* box-shadow: 0 10px 10px hsl(225, 100%, 94%); */
+	position: relative;
+	left: 135px;
+	bottom: 25px;
+}
+
+@media screen and (max-width: 1400px) {
+	.container .card_item {
+		width: 33%;
+		display: block;
+	}
+}
+
+@media screen and (max-width: 1069px) {
+	.container .card_item {
+		width: 50%;
+	}
+
+	.wrapper .header {
+		font-size: 16px;
+		height: 50px;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.container .card_item {
+		width: 80%;
+		margin: auto;
+	}
+}
+
+@media screen and (max-width: 568px) {
+	.container .card_item img {
+		width: 70%;
+		margin: auto;
+		width: 190px;
+		height: 192px;
+	}
+}
+
+
+
+
+@media screen and (max-width: 445px) {
+	.container .card_item {
+		width: 100%;
+	}
+}
